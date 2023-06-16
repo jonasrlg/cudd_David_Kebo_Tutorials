@@ -32,6 +32,8 @@ starting point is index.html. Documentation for the `dddmp` library is in the `d
 - `autotools` (`autoconf` and `automake`on Fedora)
 - `g++` (`gcc-c++` on Fedora).
 
+## Installation
+
 In the simplest form, you can build the static libraries with:
 
 ```sh
