@@ -37,9 +37,15 @@ starting point is index.html. Documentation for the `dddmp` library is in the `d
 In the simplest form, you can build the static libraries with:
 
 ```sh
-  ./configure
+  autoreconf
+  ./configure --prefix=/usr --enable-shared --enable-dddmp --enable-obj
   make
   make check
+  sudo make install
+  sudo install -Dm644 util/util.h -t /usr/include/cudd/
+  sudo install -Dm644 config.h -t /usr/include/cudd/
+  sudo install -Dm644 mtr/mtr.h -t /usr/include/cudd/
+  sudo install -Dm644 LICENSE -t /usr/share/licenses/cudd/
 ```
 
 The configure script provides a few options, which can be listed with
